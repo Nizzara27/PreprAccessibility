@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    flex:content;
+    overflow: visible;
+}
+button {
+    appearance: none;
+    border: 0;
+    background: 0 0;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+.language_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.language_content .language {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 47%;
+    border-radius: 50px;
+    padding: 13px 15px;
+    background-color: #f2f7fa;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #1f2533;
+    line-height: 1;
+    outline: 0!important;
+    transition: all .15s ease;
+}
+.header_btns {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.header_btns .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 30%;
+    font-size: 15px;
+    color: var(--lead-color);
+    border-radius: 50px;
+    letter-spacing: .3px;
+    padding: 9px 3px;
+    background-color: #fff;
+    text-decoration: none;
+    transition: all .15s ease;
+}
+.header_btns span {
+    color: darkgreen;
+}
+
+.search {
+    width: 100%;
+    height: 41px;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 0 50px;
+
+}
+
+
+/* Hide default HTML checkbox */
+.button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+#button .knobs:before {
+    content: "";
+    left: 4px;
+    background-color: #03a9f4;
+}
+
+#button .knobs:after {
+    content: "ON";
+    right: 4px;
+    color: #4e4e4e;
+}
+
+#button .knobs span {
+    display: inline-block;
+    left: 4px;
+    color: #fff;
+    z-index: 1;
+}
+
+#button .checkbox:checked + .knobs span {
+    color: #4e4e4e;
+}
+
+#button .checkbox:checked + .knobs:before {
+    left: 42px;
+    background-color: #f44336;
+}
+
+#button .checkbox:checked + .knobs:after {
+    color: #fff;
+}
+
+#button .checkbox:checked ~ .layer {
+    background-color: #fcebeb;
+}
+  
+.circle {
+    height: 30px;
+    width: 30px;
+    background-color: forestgreen;
+    border-radius: 50%;
+}
+.whitespace {
+    margin: 15px;
+    background-color: whitesmoke;
+    background-clip: content-box;
+}
+.action__content{
+    text-align: center;
+}
+:host {}:host{
+    --threshold-small-scrren:1024
+}
+.color-picker{
+    text-align:center
+}
+.color_selection{
+    position:relative;
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:0 1px;
+    border-radius:50px;
+    border:solid 1.5px #e3e8fb
+}
+.color_selection::before{
+    position:absolute;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    opacity:0;
+    background-color:#fff;
+    content:"";
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    transition:all .15s ease
+}
+.color_selection--active::before{
+    opacity:1
+}
+.color_cancel{
+    font-size:13px;
+    color:#1f2533;
+    display:block;
+    margin:10px auto 0
+}
+.color_cancel:hover{
+    text-decoration:underline
+}
+/* Create an active/current tablink class */
+.color-picker button.active {
+    border-radius: 10px;
+    border-color: black;
+}
+.base-select {
+    direction: ltr;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 10px;
+    line-height: inherit;
+    border-radius: 50px;
+    display: block;
+    max-width: none;
+    padding: 0 40px;
+    font-size: 14px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #1f2533;
+    background-color: #fff;
+    border: solid 1px #e3e8fb;
+
+    height: 40px;
+}
+.cards {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 120px;
+    padding: 15px;
+
+}
+
+.hov :hover{
+    cursor: pointer;
+    border: 5px solid forestgreen;
+}
